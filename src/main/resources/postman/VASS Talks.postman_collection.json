@@ -1,0 +1,308 @@
+{
+	"info": {
+		"_postman_id": "7225ae54-2802-499a-b3c8-df95d7d4eb8c",
+		"name": "VASS Talks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Webclient #1",
+			"item": [
+				{
+					"name": "Demo",
+					"item": [
+						{
+							"name": "Get Intradia Blocking 1 Symbol",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/api/history-blocking?symbol=TSLA",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"history-blocking"
+									],
+									"query": [
+										{
+											"key": "symbol",
+											"value": "TSLA"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Intradia Blocking 4 Symbols",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/api/history-blocking?symbol=TSLA&symbol=NIO&symbol=XPEV&symbol=CBAT",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"history-blocking"
+									],
+									"query": [
+										{
+											"key": "symbol",
+											"value": "TSLA"
+										},
+										{
+											"key": "symbol",
+											"value": "NIO"
+										},
+										{
+											"key": "symbol",
+											"value": "XPEV"
+										},
+										{
+											"key": "symbol",
+											"value": "CBAT"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Intradia Non  Blocking 1 Symbol",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/api/history-non-blocking-mono?symbol=TSLA",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"history-non-blocking-mono"
+									],
+									"query": [
+										{
+											"key": "symbol",
+											"value": "TSLA"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Intradia Non  Blocking 4 Symbols",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/api/history-non-blocking-flux?symbol=TSLA&symbol=NIO&symbol=XPEV&symbol=CBAT",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"history-non-blocking-flux"
+									],
+									"query": [
+										{
+											"key": "symbol",
+											"value": "TSLA"
+										},
+										{
+											"key": "symbol",
+											"value": "NIO"
+										},
+										{
+											"key": "symbol",
+											"value": "XPEV"
+										},
+										{
+											"key": "symbol",
+											"value": "CBAT"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Intradia Balance 1 Symbol",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/api/anual-reports-non-blocking-mono?symbol=TSLA",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"anual-reports-non-blocking-mono"
+									],
+									"query": [
+										{
+											"key": "symbol",
+											"value": "TSLA"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Intradia And Balance",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/api/anual-reports-with-balance?symbol=TSLA",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"anual-reports-with-balance"
+									],
+									"query": [
+										{
+											"key": "symbol",
+											"value": "TSLA"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "AlphaVantage",
+					"item": [
+						{
+							"name": "Get Intradia",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=TSLA&interval=1min&outputsize=full&apikey=AN2UGRW0CBO3PWLD",
+									"protocol": "https",
+									"host": [
+										"www",
+										"alphavantage",
+										"co"
+									],
+									"path": [
+										"query"
+									],
+									"query": [
+										{
+											"key": "function",
+											"value": "TIME_SERIES_INTRADAY"
+										},
+										{
+											"key": "symbol",
+											"value": "TSLA"
+										},
+										{
+											"key": "interval",
+											"value": "1min"
+										},
+										{
+											"key": "outputsize",
+											"value": "full"
+										},
+										{
+											"key": "apikey",
+											"value": "AN2UGRW0CBO3PWLD"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Balance",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://www.alphavantage.co/query?function=BALANCE_SHEET&symbol=IBM&apikey=AN2UGRW0CBO3PWLD",
+									"protocol": "https",
+									"host": [
+										"www",
+										"alphavantage",
+										"co"
+									],
+									"path": [
+										"query"
+									],
+									"query": [
+										{
+											"key": "function",
+											"value": "BALANCE_SHEET"
+										},
+										{
+											"key": "symbol",
+											"value": "IBM"
+										},
+										{
+											"key": "apikey",
+											"value": "AN2UGRW0CBO3PWLD"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		}
+	]
+}
